@@ -9,45 +9,16 @@ I value operational reliability: clear, battle-tested security logic over theore
 ## Featured Projects
 
 ### Lynx: File Integrity Monitor
-
-I built this host-based IDS in Go to handle real-time monitoring of file system
-changes. One of the main hurdles was dealing with 'atomic saves' in modern
-editors like Vim and Nano, which trigger multiple kernel events for a single
-save. I solved this by implementing a 500ms debouncer to consolidate noise into
-accurate alerts. To protect the source of truth, I used HMAC-SHA256 to sign the
-baseline. If the agent detects a signature mismatch at startup, it sends an
-emergency alert via webhook before shutting down, ensuring the team is never
-left in the dark. [View Repository](https://github.com/ItsAdam01/Lynx)
+A host-based IDS built in Go for real-time file system monitoring and cryptographic verification using HMAC-SHA256. [View Repository](https://github.com/ItsAdam01/Lynx)
 
 ### Network Intrusion Detection & WAF
-
-This is a dual-layer security dashboard that combines network sniffing with
-application-level filtering. I used Python and Scapy to inspect traffic, but had
-to move to Layer 2 sockets to get full visibility on Linux loopback interfaces.
-To keep the alert feed clean, I explicitly excluded the dashboard's own service
-ports from SYN flood and port scan tracking. This prevents the system's own
-Socket.IO traffic from triggering false positives while still catching actual
-external threats.
-[View Repository](https://github.com/ItsAdam01/Network-Intrusion-Detection)
+A dual-layer security dashboard combining Scapy-based network sniffing with application-level filtering to detect external threats. [View Repository](https://github.com/ItsAdam01/Network-Intrusion-Detection)
 
 ### Sentinel Vault: IAM PoC
-
-This project explores identity management and the importance of security
-telemetry. Instead of managing raw passwords, I integrated GitHub OAuth 2.0 to
-focus on the application's audit trail. I used ua-parser-js to break down User
-Agent strings into specific OS and browser profiles. This high-fidelity data
-makes it possible to spot session anomalies, like a user suddenly switching
-devices or locations during a sensitive operation.
-[View Repository](https://github.com/ItsAdam01/Sentinel-Vault)
+An identity management project focused on OAuth 2.0 audit trails and session anomaly detection through high-fidelity telemetry. [View Repository](https://github.com/ItsAdam01/Sentinel-Vault)
 
 ### Resort Booking Security Hardening
-
-I took a functional prototype and hardened it for production to meet Philippine
-Data Privacy Act (DPA) requirements. The biggest challenge was securing guest
-PII while keeping the admin dashboard searchable. I settled on a Blind Indexing
-pattern: encrypting names and emails with AES-256-GCM for storage, but creating
-a separate HMAC-SHA256 index for exact-match searches. This keeps the data
-secure but usable for the resort staff.
+Production hardening for a booking engine, featuring a Blind Indexing pattern to secure PII while maintaining search functionality. [View Repository](https://github.com/blueship-tech/resort-booking)
 
 ## Technical Skills
 
