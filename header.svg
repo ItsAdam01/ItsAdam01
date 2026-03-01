@@ -1,0 +1,24 @@
+<svg width="800" height="200" viewBox="0 0 800 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cyberGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F0FF" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+    <style>
+      .name { font: bold 48px sans-serif; fill: url(#cyberGradient); }
+      .title { font: 24px sans-serif; fill: #888; }
+    </style>
+  </defs>
+
+  <!-- Logo (Derived from Portfolio) -->
+  <g transform="translate(20, 25) scale(1.5)">
+    <path d="M 50 15 L 82 85 L 68 85 L 50 45 L 32 85 L 18 85 Z" fill="none" stroke="url(#cyberGradient)" stroke-width="4" stroke-linejoin="round" />
+  </g>
+
+  <!-- Text -->
+  <text x="180" y="90" class="name">ADAM ATIENZA</text>
+  <text x="180" y="130" class="title">Cybersecurity Specialist</text>
+
+  <!-- Decorative Line -->
+  <rect x="180" y="150" width="580" height="1" fill="url(#cyberGradient)" opacity="0.3" />
+</svg>

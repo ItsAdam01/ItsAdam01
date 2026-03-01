@@ -1,3 +1,5 @@
+![Adam Atienza Header](header.svg)
+
 # Adam Atienza
 
 I build secure systems and research how they fail. My work sits at the intersection of software development and defensive operations, with a focus on identity management, network security, and file system integrity.
