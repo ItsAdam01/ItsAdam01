@@ -29,11 +29,4 @@ Production hardening for a booking engine, featuring a Blind Indexing pattern to
 - Languages: Go, Python, TypeScript, JavaScript.
 - Tools: Next.js, Payload CMS, Docker, Scapy, Prisma, PostgreSQL, SQLite.
 
-## Contact
-
-- Email: adamatnza01@gmail.com
-- Portfolio: ItsAdam01.github.io
-
-I am always looking for complex security problems that require deep research and
-practical solutions. Reach out if you want to discuss security or collaborate on
-a project.
+I am always looking for complex security problems that require deep research and practical solutions. Reach out if you want to discuss security or collaborate on a project.
