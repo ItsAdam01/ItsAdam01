@@ -1,13 +1,10 @@
 # Adam Atienza
 
-I build secure systems and research how they fail. Most of my work involves
-bridging the gap between software development and defensive operations. I have a
-particular interest in identity management, network security, and file system
-integrity.
+I build secure systems and research how they fail. My work sits at the intersection of software development and defensive operations, with a focus on identity management, network security, and file system integrity.
 
-I value operational reliability and clear security logic over theoretical best
-practices. My focus is currently on web defense and protecting data at rest
-without sacrificing application usability.
+I value operational reliability: clear, battle-tested security logic over theoretical best practices. Currently, I am focusing on web defense and protecting data at rest without sacrificing usability.
+
+[Full portfolio at ItsAdam01.github.io](https://ItsAdam01.github.io)
 
 ## Featured Projects
 
